@@ -25,9 +25,6 @@ def main():
         if birth_month <= 0 or birth_month > 12:
             print("Please enter in a valid month. ")
             birth_month = int(input("What is your birth month? (e.g. 4 for April): "))
-        if birth_year == 1993 and birth_month == 3:
-            print("\nYou can actively enjoy your alcohol in the ENTIRE United States!")
-            print("Congrats on your accomplishment!")
         if birth_year <= 1993 and birth_month <= 3:
             print("\nYou can actively enjoy your alcohol in the ENTIRE United States!")
             print("Congrats on your accomplishment!")
