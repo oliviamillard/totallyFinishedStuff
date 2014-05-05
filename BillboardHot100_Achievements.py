@@ -2,20 +2,22 @@
 the top five songs of a given decade. This information is from Billboard
 Hot 100 charts."""
 
-#####################
-#  Welcome Message  #
-#####################
+## Welcome Message ##
 
 print("Hello and welcome! This program will use information from\nBillboard's Hot 100 Charts to provide answers\nto your questions. Please proceed!")
 print("\n")
 
-decade = str(input("What decade are you interested in learning about?\nPlease enter one of the following (w/ apostrophe!) :\n70's, 80's, 90's, 00's, 10's: \n"))
+## Prompt for what decade the user wants to know about ##
+decade = str(input("What decade are you interested in learning about?\nPlease enter one of the following (w/ an apostrophe!) :\n70's, 80's, 90's, 00's, 10's: \n"))
    
 print("\n")
 
-achievement = int(input("What achievement are you interested in learning about?\nPlease select one of the following options...\n\nEnter 1 if you want to know the top 3 artists\nof your chosen decade.\n\nEnter 2 if you want to know the top 5 songs\nof your chosen decade.\n\nSo what will it be: "))
+## Prompt for what achievement (top 3 artists or top 5 songs) of the chosen decade ##
+achievement = int(input("What achievement are you interested in learning about?\nPlease select one of the following options.\n\nEnter 1 if you want to know the top 3 artists\nof your chosen decade.\n\nEnter 2 if you want to know the top 5 songs\nof your chosen decade.\n\nSo what will it be: "))
 
 print("\n")
+
+## Code to output the chosen achievement of the given decade ##
 if decade == "10's" and achievement == 1:
     print("The top three artists of the 10's are: Rihanna, Katy Perry, and Bruno Mars.")
     print("Rihanna and Katy Perry both have 8 number-one singles.\nBruno Mars has 5.\n")
@@ -46,4 +48,6 @@ if decade == "70's" and achievement == 2:
     print('The top 5 songs of the 70\'s are (Title, Artist, # of weeks at #1):\n1. "You Light Up My Life", Debby Boone, 10\n2. "Night Fever", Bee Gees, 8\n3. "Tonight\'s the Night (Gonna Be Alright), Rod Stewart, 8\n4. "Shadow Dancing", Andy Gibb, 7\n5. "Bridge over Troubled Water", Simon & Garfunkel, 6\n')
 
 print("\n")
+
+## Short "goodbye" message ##
 print("Wow! I hope that was fulfilling for you. Thanks for inquiring.")
